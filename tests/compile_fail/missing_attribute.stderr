@@ -1,0 +1,5 @@
+error: missing `#[strings(...)]`, every variant must supply every string
+ --> tests/compile_fail/missing_attribute.rs:7:5
+  |
+7 |     Docs,
+  |     ^^^^

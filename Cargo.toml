@@ -1,0 +1,38 @@
+[package]
+name = "enum-strings"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT OR Apache-2.0"
+description = "Derive a const fn per named string on a unit enum, every variant required to supply every string"
+readme = "README.md"
+repository = "https://github.com/apekros/enum-strings"
+documentation = "https://docs.rs/enum-strings"
+keywords = ["enum", "derive", "const", "static", "macro"]
+categories = ["rust-patterns", "development-tools::procedural-macro-helpers"]
+
+[lib]
+proc-macro = true
+
+[lints.clippy]
+pedantic = "warn"
+allow_attributes = { level = "deny", priority = 1 }
+complexity = "warn"
+perf = "warn"
+suspicious = "warn"
+nursery = "warn"
+unwrap_used = "warn"
+expect_used = "warn"
+missing_docs_in_private_items = "warn"
+
+[lints.rust]
+missing_docs = "warn"
+
+[dependencies]
+proc-macro2 = "1"
+quote = "1"
+syn = "2"
+
+[dev-dependencies]
+anyhow = "1"
+trybuild = "1"

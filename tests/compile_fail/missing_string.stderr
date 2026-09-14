@@ -1,0 +1,5 @@
+error: variant `Docs` is missing `label`
+ --> tests/compile_fail/missing_string.rs:8:5
+  |
+8 |     Docs,
+  |     ^^^^

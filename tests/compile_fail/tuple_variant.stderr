@@ -1,0 +1,6 @@
+error: EnumStrings only supports unit variants
+ --> tests/compile_fail/tuple_variant.rs:5:5
+  |
+5 | /     #[strings(path = "/")]
+6 | |     Home(u8),
+  | |____________^

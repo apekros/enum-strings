@@ -1,0 +1,5 @@
+error: unknown string `lable`, the first variant declares `path`, `label`
+ --> tests/compile_fail/unknown_string.rs:7:31
+  |
+7 |     #[strings(path = "/docs", lable = "Docs")]
+  |                               ^^^^^

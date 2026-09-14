@@ -1,0 +1,5 @@
+error: `path` given twice
+ --> tests/compile_fail/duplicate_string.rs:5:27
+  |
+5 |     #[strings(path = "/", path = "/again")]
+  |                           ^^^^
